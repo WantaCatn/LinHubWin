@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=LinHub终端连接管理器
+Name[zh_CN]=LinHub终端连接管理器
+Exec=/usr/local/bin/linhub
+Icon=/usr/share/pixmaps/linhub.png
+Terminal=false
+Categories=System;TerminalEmulator;Network;
+Keywords=ssh;telnet;sftp;terminal;xshell;mobaxterm;kylin;
+StartupNotify=true
+StartupWMClass=linhub

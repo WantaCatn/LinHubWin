@@ -1,0 +1,49 @@
+# Build
+build/
+cmake-build-*/
+out/
+*.o
+*.a
+*.so
+*.so.*
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.autosave
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+*.user
+*.user.*
+CMakeLists.txt.user
+.cache/
+compile_commands.json
+
+# Qt
+*.qmlc
+*.jsc
+
+# Packages
+dist/
+*.deb
+*.rpm
+*.tar.gz
+*.AppImage
+third_party/_openssh_extract/
+third_party/*.zip
+
+# Runtime
+*.log
+*.core
+core
+.linhub/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

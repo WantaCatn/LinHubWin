@@ -1,0 +1,166 @@
+* { font-size: 14px; }
+
+QMainWindow, QDialog, QWidget {
+    background: #070b14;
+    color: #d7e3f4;
+}
+
+QMenuBar, QToolBar, QWidget#compactBar, QWidget#compactBarBottom {
+    background: #050814;
+    color: #d7e3f4;
+    border: none;
+}
+QMenuBar { border-bottom: 1px solid #15233d; padding: 0 4px; min-height: 24px; }
+QMenuBar::item { padding: 4px 10px; }
+QMenuBar::item:selected { background: #3b82f6; color: #fff; }
+
+QMenu { background: #0b1528; color: #d7e3f4; border: 1px solid #1e3a5f; }
+QMenu::item { padding: 5px 22px; }
+QMenu::item:selected { background: #2563eb; }
+
+QToolBar { spacing: 4px; padding: 2px 6px; }
+QToolBar QToolButton { padding: 3px 8px; border-radius: 4px; }
+QToolBar QToolButton:hover, QToolBar QToolButton:checked { background: transparent; }
+
+QStatusBar { background: #04070f; color: #7f93b0; border-top: 1px solid #15233d; min-height: 22px; }
+
+QTreeView, QListView, QTableView {
+    background: #0a1220;
+    alternate-background-color: #0d1828;
+    color: #d7e3f4;
+    border: 1px solid #15233d;
+    selection-background-color: #2563eb;
+    outline: none;
+    show-decoration-selected: 1;
+}
+QTreeView::item, QListView::item, QTableView::item {
+    padding: 2px 6px;
+    border: none;
+}
+QTreeView::item:selected, QListView::item:selected, QTableView::item:selected,
+QTreeView::item:selected:active, QListView::item:selected:active,
+QTreeView::item:selected:!active, QListView::item:selected:!active {
+    background: #2563eb;
+    color: #ffffff;
+}
+QTreeView::item:focus, QListView::item:focus, QTableView::item:focus {
+    outline: none;
+    border: none;
+}
+QHeaderView::section { background: #0b1528; color: #adc0d9; border: none; padding: 4px 8px; }
+
+QLineEdit, QSpinBox, QComboBox, QPlainTextEdit, QTextEdit {
+    background: #050814;
+    color: #d7e3f4;
+    border: 1px solid #1e3a5f;
+    border-radius: 3px;
+    padding: 2px 6px;
+    min-height: 20px;
+    selection-background-color: #2563eb;
+}
+QComboBox QAbstractItemView { background: #0b1528; color: #d7e3f4; selection-background-color: #2563eb; }
+
+QPushButton {
+    background: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px;
+    min-height: 22px;
+}
+QPushButton:hover { background: #3b82f6; }
+QPushButton:disabled { background: #1e293b; color: #64748b; }
+QPushButton[secondary="true"] { background: #13233d; color: #d7e3f4; }
+
+QTabWidget::pane { border: 1px solid #15233d; background: #05080f; }
+QWidget#sessionTabStrip { background: transparent; }
+QScrollArea#sessionTabScroll { background: transparent; border: none; }
+QToolButton#startPageTab {
+    background: #0b1528;
+    color: #8aa0bc;
+    padding: 4px 12px;
+    border: 1px solid #15233d;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    min-width: 82px;
+    min-height: 26px;
+}
+QToolButton#startPageTab:checked {
+    background: #05080f;
+    color: #ffffff;
+    border-top: 2px solid #60a5fa;
+}
+QToolButton#tabScrollBtn {
+    min-width: 28px;
+    max-width: 28px;
+    min-height: 28px;
+    max-height: 28px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #15233d;
+    border-radius: 4px;
+    background: #0b1528;
+    color: #d7e3f4;
+}
+QToolButton#tabScrollBtn:hover { background: #13233d; }
+QToolButton#tabScrollBtn:disabled { color: #64748b; background: #050814; }
+QTabBar::tab {
+    background: #0b1528;
+    color: #8aa0bc;
+    padding: 5px 10px 5px 22px;
+    border: 1px solid #15233d;
+    min-width: 64px;
+}
+QTabBar::tab:selected { background: #05080f; color: #fff; border-top: 2px solid #60a5fa; }
+
+QSplitter::handle { background: #15233d; }
+QDockWidget::title { background: #0b1528; padding: 4px 8px; color: #d7e3f4; }
+QGroupBox { border: 1px solid #1e3a5f; border-radius: 5px; margin-top: 10px; padding-top: 8px; }
+QGroupBox::title { color: #8aa0bc; left: 10px; padding: 0 6px; }
+QCheckBox, QRadioButton, QLabel { color: #d7e3f4; }
+
+QScrollBar:vertical { background: #050814; width: 8px; }
+QScrollBar::handle:vertical { background: #1e3a5f; min-height: 20px; border-radius: 4px; }
+QScrollBar:horizontal { background: #050814; height: 8px; }
+QScrollBar::handle:horizontal { background: #1e3a5f; min-width: 20px; border-radius: 4px; }
+QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; }
+QToolTip { background: #0b1528; color: #d7e3f4; border: 1px solid #1e3a5f; }
+
+QWidget#compactBar { border-bottom: 1px solid #15233d; max-height: 34px; }
+QWidget#compactBarBottom { border-top: 1px solid #15233d; max-height: 34px; }
+QWidget#findBar { background: #050814; border-top: 1px solid #15233d; max-height: 32px; }
+QToolBar#mainToolbar { min-height: 50px; padding: 1px 4px; spacing: 1px; }
+QToolBar#mainToolbar QToolButton { padding: 1px 1px 0 1px; margin: 0; min-width: 34px; max-width: 50px; min-height: 48px; border-radius: 5px; font-size: 12px; font-weight: 400; color: #adc0d9; background: transparent; border: none; }
+QToolBar#mainToolbar QToolButton:hover, QToolBar#mainToolbar QToolButton:checked { background: transparent; border: none; }
+QWidget#splitHolder { background: #050814; }
+QWidget#sessionPane { border: 1px solid #15233d; background: #070b14; }
+QWidget#sessionPane[active="true"] { border: 3px solid #60a5fa; }
+QWidget#startPage { background-color: #070b14; }
+QLabel#startTitle { font-size: 26px; font-weight: bold; color: #ffffff; }
+QLabel#startSub { color: #7f93b0; }
+QLabel#startHead { font-weight: bold; color: #8aa0bc; padding: 4px 0; }
+QListWidget#startList { border-radius: 6px; padding: 4px; }
+QDialogButtonBox { min-height: 36px; }
+
+QMessageBox, QInputDialog, QFileDialog, QErrorMessage {
+    background: #070b14;
+    color: #d7e3f4;
+}
+QMessageBox QLabel, QInputDialog QLabel, QFileDialog QLabel {
+    background: transparent;
+    color: #d7e3f4;
+}
+QLabel#hintLabel { color: #7f93b0; font-size: 13px; }
+
+QProgressBar#sftpProgress {
+    background: rgba(148, 163, 184, 28);
+    border: none;
+    min-height: 8px;
+    max-height: 10px;
+    text-align: center;
+}
+QProgressBar#sftpProgress::chunk {
+    background: rgba(96, 165, 250, 80);
+    border-radius: 4px;
+}

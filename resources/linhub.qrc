@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/linhub.svg</file>
+        <file>icons/linhub.png</file>
+        <file>icons/new.svg</file>
+        <file>icons/folder.svg</file>
+        <file>icons/ssh.svg</file>
+        <file>icons/telnet.svg</file>
+        <file>icons/local.svg</file>
+        <file>icons/serial.svg</file>
+        <file>icons/sftp.svg</file>
+        <file>icons/reconnect.svg</file>
+        <file>icons/disconnect.svg</file>
+        <file>icons/copy.svg</file>
+        <file>icons/paste.svg</file>
+        <file>icons/find.svg</file>
+        <file>icons/find-prev.svg</file>
+        <file>icons/find-next.svg</file>
+        <file>icons/zoom-in.svg</file>
+        <file>icons/zoom-out.svg</file>
+        <file>icons/settings.svg</file>
+        <file>icons/home.svg</file>
+        <file>icons/star.svg</file>
+        <file>icons/fullscreen.svg</file>
+        <file>icons/connect.svg</file>
+        <file>icons/clear.svg</file>
+        <file>icons/duplicate.svg</file>
+        <file>icons/history.svg</file>
+        <file>icons/broadcast.svg</file>
+        <file>icons/send.svg</file>
+        <file>icons/compose.svg</file>
+        <file>icons/quick.svg</file>
+        <file>icons/terminal.svg</file>
+        <file>icons/close.svg</file>
+        <file>icons/download.svg</file>
+        <file>icons/upload.svg</file>
+        <file>icons/file.svg</file>
+        <file>icons/up.svg</file>
+        <file>icons/follow.svg</file>
+        <file>styles/app.qss</file>
+        <file>styles/dark.qss</file>
+        <file>styles/midnight.qss</file>
+        <file>styles/light.qss</file>
+    </qresource>
+</RCC>

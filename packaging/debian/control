@@ -1,0 +1,15 @@
+Source: linhub
+Section: misc
+Priority: optional
+Maintainer: LinHub <linhub@localhost>
+Standards-Version: 4.5.1
+Build-Depends: debhelper-compat (= 13), cmake, qtbase5-dev, qtbase5-dev-tools, pkg-config
+Homepage: https://github.com/linhub/linhub
+Package: linhub
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, openssh-client
+Recommends: telnet, minicom
+Description: Terminal session manager for Kylin Linux
+ LinHub combines MobaXterm-style multi-protocol terminals with Xshell-style
+ session library, logging and compose bar. Sessions are stored in SQLite
+ with no practical limit.

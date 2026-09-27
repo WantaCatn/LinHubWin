@@ -1,0 +1,168 @@
+* { font-size: 14px; }
+
+QMainWindow, QDialog, QWidget {
+    background: #f4f6fa;
+    color: #1e293b;
+}
+
+QMenuBar, QToolBar, QWidget#compactBar, QWidget#compactBarBottom {
+    background: #ffffff;
+    color: #1e293b;
+}
+QMenuBar { border-bottom: 1px solid #d8dee9; padding: 0 4px; min-height: 24px; }
+QMenuBar::item { padding: 4px 10px; }
+QMenuBar::item:selected { background: #2563eb; color: #fff; }
+
+QMenu { background: #ffffff; color: #1e293b; border: 1px solid #d8dee9; }
+QMenu::item { padding: 5px 22px; }
+QMenu::item:selected { background: #2563eb; color: #fff; }
+
+QToolBar { border-bottom: 1px solid #e5e7eb; spacing: 4px; padding: 2px 6px; }
+QToolBar QToolButton { padding: 3px 8px; border-radius: 4px; }
+QToolBar QToolButton:hover { background: transparent; }
+QToolBar QToolButton:checked { background: transparent; }
+
+QStatusBar { background: #eef2f7; color: #475569; border-top: 1px solid #d8dee9; min-height: 22px; }
+
+QTreeView, QListView, QTableView {
+    background: #ffffff;
+    alternate-background-color: #f8fafc;
+    color: #0f172a;
+    border: 1px solid #d8dee9;
+    selection-background-color: #2563eb;
+    selection-color: #ffffff;
+    outline: none;
+    show-decoration-selected: 1;
+}
+QTreeView::item, QListView::item, QTableView::item {
+    padding: 2px 6px;
+    border: none;
+}
+QTreeView::item:selected, QListView::item:selected, QTableView::item:selected,
+QTreeView::item:selected:active, QListView::item:selected:active,
+QTreeView::item:selected:!active, QListView::item:selected:!active {
+    background: #2563eb;
+    color: #ffffff;
+}
+QTreeView::item:focus, QListView::item:focus, QTableView::item:focus {
+    outline: none;
+    border: none;
+}
+QHeaderView::section { background: #eef2f7; color: #334155; border: none; padding: 4px 8px; }
+
+QLineEdit, QSpinBox, QComboBox, QPlainTextEdit, QTextEdit {
+    background: #ffffff;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    border-radius: 3px;
+    padding: 2px 6px;
+    min-height: 20px;
+    selection-background-color: #2563eb;
+    selection-color: #fff;
+}
+QComboBox QAbstractItemView { background: #ffffff; color: #1e293b; selection-background-color: #2563eb; selection-color: #fff; }
+
+QPushButton {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 10px;
+    min-height: 22px;
+}
+QPushButton:hover { background: #1d4ed8; }
+QPushButton:disabled { background: #cbd5e1; color: #64748b; }
+QPushButton[secondary="true"] { background: #e2e8f0; color: #1e293b; }
+
+QTabWidget::pane { border: 1px solid #d8dee9; background: #ffffff; }
+QWidget#sessionTabStrip { background: transparent; }
+QScrollArea#sessionTabScroll { background: transparent; border: none; }
+QToolButton#startPageTab {
+    background: #eef2f7;
+    color: #475569;
+    padding: 4px 12px;
+    border: 1px solid #d8dee9;
+    border-bottom: none;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    min-width: 82px;
+    min-height: 26px;
+}
+QToolButton#startPageTab:checked {
+    background: #ffffff;
+    color: #0f172a;
+    border-top: 2px solid #2563eb;
+}
+QToolButton#tabScrollBtn {
+    min-width: 28px;
+    max-width: 28px;
+    min-height: 28px;
+    max-height: 28px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #d8dee9;
+    border-radius: 4px;
+    background: #eef2f7;
+    color: #1e293b;
+}
+QToolButton#tabScrollBtn:hover { background: #e2e8f0; }
+QToolButton#tabScrollBtn:disabled { color: #94a3b8; background: #f8fafc; }
+QTabBar::tab {
+    background: #eef2f7;
+    color: #475569;
+    padding: 5px 10px 5px 22px;
+    border: 1px solid #d8dee9;
+    min-width: 64px;
+}
+QTabBar::tab:selected { background: #ffffff; color: #0f172a; border-top: 2px solid #2563eb; }
+
+QSplitter::handle { background: #d8dee9; }
+QDockWidget::title { background: #eef2f7; padding: 4px 8px; color: #1e293b; }
+QGroupBox { border: 1px solid #cbd5e1; border-radius: 5px; margin-top: 10px; padding-top: 8px; color: #1e293b; }
+QGroupBox::title { color: #475569; left: 10px; padding: 0 6px; }
+QCheckBox, QRadioButton, QLabel { color: #1e293b; }
+
+QScrollBar:vertical { background: #f1f5f9; width: 8px; }
+QScrollBar::handle:vertical { background: #cbd5e1; min-height: 20px; border-radius: 4px; }
+QScrollBar:horizontal { background: #f1f5f9; height: 8px; }
+QScrollBar::handle:horizontal { background: #cbd5e1; min-width: 20px; border-radius: 4px; }
+QScrollBar::add-line, QScrollBar::sub-line { width: 0; height: 0; }
+QToolTip { background: #ffffff; color: #1e293b; border: 1px solid #d8dee9; }
+
+QWidget#compactBar { border-bottom: 1px solid #d8dee9; max-height: 34px; }
+QWidget#compactBarBottom { border-top: 1px solid #d8dee9; max-height: 34px; }
+QWidget#findBar { background: #ffffff; border-top: 1px solid #d8dee9; max-height: 32px; }
+QToolBar#mainToolbar { min-height: 50px; padding: 1px 4px; spacing: 1px; }
+QToolBar#mainToolbar QToolButton { padding: 1px 1px 0 1px; margin: 0; min-width: 34px; max-width: 50px; min-height: 48px; border-radius: 5px; font-size: 12px; font-weight: 400; color: #475569; background: transparent; border: none; }
+QToolBar#mainToolbar QToolButton:hover, QToolBar#mainToolbar QToolButton:checked { background: transparent; border: none; }
+QWidget#splitHolder { background: #eef2f7; }
+QWidget#sessionPane { border: 1px solid #d8dee9; background: #f4f6fa; }
+QWidget#sessionPane[active="true"] { border: 3px solid #2563eb; }
+QWidget#startPage { background-color: #f4f6fa; }
+QLabel#startTitle { font-size: 26px; font-weight: bold; color: #0f172a; }
+QLabel#startSub { color: #64748b; }
+QLabel#startHead { font-weight: bold; color: #334155; padding: 4px 0; }
+QListWidget#startList { border-radius: 6px; padding: 4px; }
+QDialogButtonBox { min-height: 36px; }
+
+QMessageBox, QInputDialog, QFileDialog, QErrorMessage {
+    background: #f4f6fa;
+    color: #1e293b;
+}
+QMessageBox QLabel, QInputDialog QLabel, QFileDialog QLabel {
+    background: transparent;
+    color: #1e293b;
+}
+QLabel#hintLabel { color: #64748b; font-size: 13px; }
+
+QProgressBar#sftpProgress {
+    background: rgba(148, 163, 184, 40);
+    border: none;
+    min-height: 8px;
+    max-height: 10px;
+    text-align: center;
+}
+QProgressBar#sftpProgress::chunk {
+    background: rgba(37, 99, 235, 70);
+    border-radius: 4px;
+}
